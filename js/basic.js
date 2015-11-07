@@ -1,5 +1,10 @@
 // update base url ( http://localhost/savsoftquiz/ ). include slash at end
-var base_url = "http://127.0.0.1/online-test/";
+
+if (window.location.href.indexOf("127.0.0.1") > -1) {
+    var base_url = "http://127.0.0.1/rapid/online-test/";
+} else {
+    var base_url = "http://rapidovations.com/online-test/";
+}
 
 var comnt_id = "0";
 $(document).ready(function() {

@@ -14,7 +14,11 @@
 | path to your installation.
 |
 */
-$config['base_url']	= 'http://127.0.0.1/online-test/';
+if($_SERVER['SERVER_ADDR'] == '127.0.0.1') {
+	$config['base_url']	= 'http://127.0.0.1/rapid/online-test/';
+} else {
+	$config['base_url']	= 'http://rapidovations.com/online-test/';
+}
 
 /*
 | number of records per page

@@ -132,9 +132,9 @@ if($this->uri->segment(2) != "access_test"){
                         ?>
                         </li>
 
-                         <li>
+                         <!-- <li>
                          <a href="<?php echo site_url('liveclass');?>" ><i class="fa fa-desktop fa-fw"></i> Live Classroom</a>
-                         </li>
+                         </li> -->
 
                           <?php 
                          if($logged_in['su']=="1"){ ?>
